@@ -22,7 +22,7 @@ def Initialize():
             x, y, w, h = cv2.boundingRect(c)
             cv2.rectangle(frame1, (x, y), (x+w, y+h), (0, 255, 0), 2)
             mixer.init()
-            mixer.music.load(""""your directory for sounds alert"""")
+            mixer.music.load("song path")
             mixer.music.play()
         
         if cv2.waitKey(10) == ord('c'):
